@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COINFLIP | Planilha</title>
-    <link rel="stylesheet" href="/planilha/planilha.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/planilha/planilha.css">
 </head>
 
 <body>
@@ -30,33 +30,36 @@
         </nav>
     </header>
 
-    <section class="subtitle">
-        <h1>Planilha</h1>
-        <p>Exibindo: Resultado Geral</p>
-    </section>
-
-    <section class="filter">
-        <p>Filtrar por:</p>
-        <div class="options">
-            <form>
-                <select name="filtros">
-                    <option value="resultado_geral">Resultado Geral</option>
-                    <option value="janeiro">Janeiro</option>
-                    <option value="fevereiro">Fevereiro</option>
-                    <option value="março">Março</option>
-                    <option value="abril">Abril</option>
-                    <option value="maio">Maio</option>
-                    <option value="junho">Junho</option>
-                    <option value="julho">Julho</option>
-                    <option value="agosto">Agosto</option>
-                    <option value="setembro">Setembro</option>
-                    <option value="outubro">Outubro</option>
-                    <option value="novembro">Novembro</option>
-                    <option value="dezembro">Dezembro</option>
-                </select>
-            </form>
+    <section class="container-superior">
+        <div class="subtitle">
+            <h1>Planilha</h1>
+            <p class="texto-pequeno">Exibindo: Resultado Geral</p>
         </div>
+
+        <div>
+            <p>Filtrar por:</p>
+            <div class="options">
+                <form>
+                    <select name="filtros">
+                        <option value="resultado_geral">Resultado Geral</option>
+                        <option value="janeiro">Janeiro</option>
+                        <option value="fevereiro">Fevereiro</option>
+                        <option value="março">Março</option>
+                        <option value="abril">Abril</option>
+                        <option value="maio">Maio</option>
+                        <option value="junho">Junho</option>
+                        <option value="julho">Julho</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="setembro">Setembro</option>
+                        <option value="outubro">Outubro</option>
+                        <option value="novembro">Novembro</option>
+                        <option value="dezembro">Dezembro</option>
+                    </select>
+                </form>
+            </div>
+        </div>    
     </section>
+    
     
     <aside class="results">
         <div>
@@ -125,7 +128,7 @@
 
     <main>
         <h2>Lucro</h2>
-        <img src="../image/chart.png" alt="Gráfico" class="chart-image">
+        <div class="chart"><img src="../image/chart.png" alt="Gráfico" class="chart-image"></div>
     </main>
     
     <footer>
