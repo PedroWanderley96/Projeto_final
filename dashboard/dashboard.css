@@ -9,20 +9,24 @@ body {
   background-color: #000618;
   color: aliceblue;
 }
+
 header {
   padding: 10px 20px;
   background-color: #272727;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .navbar-nav {
   gap: 20px;
 }
+
 .navbar-nav .nav-link {
   color: white;
   font-weight: bold;
   position: relative;
   text-decoration: none;
 }
+
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -33,20 +37,39 @@ header {
   background-color: #27dbbb;
   transition: width 0.3s;
 }
+
 .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
+
+/* Remover este estilo */
 .nav-item:last-child {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
+
 .logout-container {
   display: flex;
   align-items: center;
   gap: 10px;
   color: white;
 }
+
+.logout-container .nav-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .logout-container:hover {
   text-decoration: none;
+}
+
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
 }
 
 .container-aside {
@@ -217,4 +240,37 @@ header {
 
 .card-container button:hover {
   background: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .collapse.navbar-collapse {
+    display: none;
+  }
+
+  .collapse.navbar-collapse.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .logout-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
