@@ -1,25 +1,107 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #000618;
     color: white;
     font-family: "DM Sans", sans-serif;
     font-style: normal;
-}
-
-.container-superior {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.container-superior .titulo {
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+}
+
+.planilha .titulo {
+    margin-bottom: 30px;
+}
+
+.planilha .titulo h1 {
     font-size: 32px;
-    font-weight: bold;
+    font-style: bold;
 }
 
-.container-superior .texto-pequeno {
+.planilha .titulo p {
+    font-size: 16px;
     color: #07EAD3;
-    font-size: 20px;
-    font-weight: light;
+    font-style: light;
 }
 
+.planilha .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.rentabilidade {
+    background-color: rgb(40, 67, 151, 13%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.rentabilidade h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.rentabilidade .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.rentabilidade ul {
+    list-style: none;
+}
+
+.rentabilidade ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #2d3748;
+}
+
+.grafico {
+    padding: 20px;
+    border-radius: 8px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grafico h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.chart-image {
+    height: 400px;
+    flex-grow: 1;
+}
+
+.filtro {
+    display: flex;
+    justify-content: flex-end;    
+    
+}
+
+.filtro label {
+    margin-right: 10px;
+    stroke: rgba(1, 148, 254, 51%);
+    border-radius: 14%;
+
+}
