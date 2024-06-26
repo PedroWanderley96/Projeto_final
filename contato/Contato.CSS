@@ -74,33 +74,3 @@ button {
 button:hover {
   background-color: #00bfa5;
 }
-
-footer {
-  width: 100%;
-  background-color: #0d1b2a;
-  padding: 20px;
-  text-align: center;
-  font-size: 0.9em;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-footer ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
-}
-
-footer ul li {
-  display: inline;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-}
