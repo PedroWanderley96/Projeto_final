@@ -38,12 +38,10 @@ body {
 main {
     display: flex;
     width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px;
 }
 
 .planilha {
-    padding-left: 80px;
     width: 20%;
 }
 
@@ -69,7 +67,10 @@ main {
 }
 
 .rentabilidade {
-    background-color: rgb(40, 67, 151, 13%);
+    background-color: rgba(40, 67, 151, 13%);
+    border-color: rgba(1, 148, 254, 25%);
+    border-style: inset;
+    border-radius: 1px;
     padding: 20px;
     border-radius: 8px;
     width: 300px;
@@ -114,7 +115,6 @@ main {
     font-style: bold;
     margin: 20px 0;
     text-align: left;
-
 }
 
 .rentabilidade th {
@@ -126,17 +126,16 @@ main {
 .rentabilidade td {
     padding-top: 10px;
     padding-right: 110px;
-
 }
 
 .chart {
-    padding-left: 80px;
+    padding-left: 50px;
     width: 80%;
 }
 
 .grafico {
-    padding: 20px;
-    border-radius: 8px;
+    padding-top: 80px;
+    padding-left: 20px;
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -146,24 +145,27 @@ main {
 .grafico h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    font-style: bold;
 }
 
 .chart-image {
-    height: 400px;
+    width: auto;
     flex-grow: 1;
 }
 
-.filtro {
+.filtrar {
     display: flex;
     justify-content: flex-end;
     color: #07ead3;   
-    
 }
 
-.filtro label {
+.filtrar resultado {
     width: 198px;
     height: 54px;
-    margin-right: 10px;
+    margin-left: 10px;
     stroke: rgba(1, 148, 254, 51%);
     border-radius: 14%;
+    justify-content: right;
+    font-size: 15px;
+    font-style: light;
 }
