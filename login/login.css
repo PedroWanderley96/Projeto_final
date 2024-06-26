@@ -1,182 +1,80 @@
 /* Estilos gerais */
 body {
-    font-family: 'DM Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f5f5f5;
+  font-family: "DM Sans", sans-serif;
+  background: linear-gradient(
+    45deg,
+    #000309 17.6%,
+    rgba(1, 43, 90, 0.902) 48.6%,
+    rgba(1, 148, 254, 0.53) 72%,
+    rgba(4, 34, 107, 0.5) 83.3%
+  );
+  background-color: #000618;
+  color: aliceblue;
 }
 
-/* Estilo do cabeçalho */
-header {
-    background-color: #2b2b2b;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    margin: 0;
-    color: white;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-nav ul li img.logo {
-    width: 50px;
-    height: auto;
-}
-
-nav input[type="text"] {
-    padding: 5px;
-    margin-left: auto;
-    margin-right: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-nav div {
-    display: flex;
-    align-items: center;
-}
-
-nav div li {
-    margin-right: 10px;
-    list-style: none;
-}
-
-nav div img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-/* Estilo do formulário */
 fieldset {
-    border: none;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 400px;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    box-sizing: border-box;
+  border: none;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 form {
-    padding: 10px;
+  padding: 10px;
 }
 
 form h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #2b2b2b;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2b2b2b;
 }
 
 form label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #2b2b2b;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #2b2b2b;
 }
 
 form input[type="text"],
 form input[type="password"] {
-    width: calc(100% - 20px); /* Ajuste para evitar o corte na borda */
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-left: 10px; /* Adicionado para manter o espaço interno */
-    margin-right: 10px; /* Adicionado para manter o espaço interno */
+  width: calc(100% - 20px); /* Ajuste para evitar o corte na borda */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px; /* Adicionado para manter o espaço interno */
+  margin-right: 10px; /* Adicionado para manter o espaço interno */
 }
 
 form a {
-    display: block;
-    text-align: right;
-    color: #007bff;
-    text-decoration: none;
-    font-size: 14px;
-    margin-right: 10px; /* Adicionado para alinhar com a margem do input */
+  display: block;
+  text-align: right;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px; /* Adicionado para alinhar com a margem do input */
 }
 
 form button {
-    width: calc(100% - 20px); /* Ajuste para evitar o corte na borda */
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px; /* Adicionado para manter o espaço interno */
-    margin-right: 10px; /* Adicionado para manter o espaço interno */
+  width: calc(100% - 20px); /* Ajuste para evitar o corte na borda */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px; /* Adicionado para manter o espaço interno */
+  margin-right: 10px; /* Adicionado para manter o espaço interno */
 }
 
 form button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilo do rodapé */
-footer {
-    background-color: #2b2b2b;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer div.content {
-    max-width: 800px;
-    margin: 20px 0;
-    text-align: center;
-}
-
-footer div p {
-    font-size: 14px;
-    color: #ccc;
-    margin: 10px 0;
-}
-
-footer nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-footer nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-footer nav ul li {
-    margin: 0 10px;
-}
-
-footer nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-footer nav ul li img.logo {
-    width: 50px;
-    height: auto;
+  background-color: #0056b3;
 }

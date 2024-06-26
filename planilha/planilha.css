@@ -1,18 +1,38 @@
-* {
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    background: linear-gradient(
+      45deg,
+      #000309 17.6%,
+      rgba(1, 43, 90, 0.902) 48.6%,
+      rgba(1, 148, 254, 0.53) 72%,
+      rgba(4, 34, 107, 0.5) 83.3%
+    );
     background-color: #000618;
-    color: white;
+    color: aliceblue;
     font-family: "DM Sans", sans-serif;
     font-style: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  }
+  
+.container-superior {
+   display: flex;
+   flex-direction: row;
+}
+  
+.container-superior .titulo {
+    font-size: 32px;
+    font-weight: bold;
+}
+  
+.container-superior .texto-pequeno {
+    color: #07ead3;
+    font-size: 20px;
+    font-weight: light;
 }
 
 main {
