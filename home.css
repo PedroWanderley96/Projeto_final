@@ -1,4 +1,11 @@
 body {
-  background-color: black;
+  background: linear-gradient(
+    45deg,
+    #000309 17.6%,
+    rgba(1, 43, 90, 0.902) 48.6%,
+    rgba(1, 148, 254, 0.53) 72%,
+    rgba(4, 34, 107, 0.5) 83.3%
+  );
+  background-color: #000618;
   color: aliceblue;
 }

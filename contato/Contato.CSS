@@ -1,25 +1,14 @@
-body,
-h1,
-form,
-fieldset,
-div,
-label,
-input,
-button,
-nav,
-ul,
-li,
-footer,
-a {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #0a192f;
-  color: #fff;
+  background: linear-gradient(
+    45deg,
+    #000309 17.6%,
+    rgba(1, 43, 90, 0.902) 48.6%,
+    rgba(1, 148, 254, 0.53) 72%,
+    rgba(4, 34, 107, 0.5) 83.3%
+  );
+  background-color: #000618;
+  color: aliceblue;
+  font-family: "DM Sans", sans-serif;
 }
 
 .container {

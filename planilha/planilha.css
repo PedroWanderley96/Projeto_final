@@ -1,25 +1,29 @@
-
-
 body {
-    background-color: #000618;
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
+  background: linear-gradient(
+    45deg,
+    #000309 17.6%,
+    rgba(1, 43, 90, 0.902) 48.6%,
+    rgba(1, 148, 254, 0.53) 72%,
+    rgba(4, 34, 107, 0.5) 83.3%
+  );
+  background-color: #000618;
+  color: aliceblue;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
 }
 
 .container-superior {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .container-superior .titulo {
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .container-superior .texto-pequeno {
-    color: #07EAD3;
-    font-size: 20px;
-    font-weight: light;
+  color: #07ead3;
+  font-size: 20px;
+  font-weight: light;
 }
-
