@@ -47,6 +47,7 @@ main {
 
 .planilha .titulo {
     margin-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .planilha .titulo h1 {
@@ -134,7 +135,7 @@ main {
 }
 
 .grafico {
-    padding-top: 80px;
+    padding-top: 70px;
     padding-left: 20px;
     flex: 2;
     display: flex;
@@ -163,7 +164,7 @@ main {
 
 .filtro span {
     align-content: center;
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 .filtro .menu {
