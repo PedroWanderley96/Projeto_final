@@ -129,7 +129,7 @@ main {
 }
 
 .chart {
-    padding-left: 50px;
+    padding-left: 30px;
     width: 80%;
 }
 
@@ -153,19 +153,55 @@ main {
     flex-grow: 1;
 }
 
-.filtrar {
+.filtro {
     display: flex;
     justify-content: flex-end;
-    color: #07ead3;   
-}
-
-.filtrar resultado {
-    width: 198px;
-    height: 54px;
-    margin-left: 10px;
-    stroke: rgba(1, 148, 254, 51%);
-    border-radius: 14%;
-    justify-content: right;
     font-size: 15px;
     font-style: light;
+    justify-content: right;
+}
+
+.filtro span {
+    align-content: center;
+    padding-right: 5px;
+}
+
+.filtro .menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu .periodo {
+    background-color: rgba(0, 0, 0, 0);
+    color: #07EAD3;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid rgba(1, 148, 254, 51%);
+    border-radius: 14px;
+    cursor: pointer;
+    width: 198px;
+    height: 54px;
+}
+
+.periodo::after {
+    content: '▼';
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.menu .menu-content {
+    display: none;
+    position: absolute;
+    background-color: #0194FE;
+    min-width: 198px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2%);
+    border-radius: 14px;
+}
+
+.periodo:hover .menu-content {
+    display: block;
 }
