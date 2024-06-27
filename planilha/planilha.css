@@ -37,9 +37,12 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    padding: 20px;
+    width: 100%;
+    padding: 80px;
+}
+
+.planilha {
+    width: 20%;
 }
 
 .planilha .titulo {
@@ -64,7 +67,10 @@ main {
 }
 
 .rentabilidade {
-    background-color: rgb(40, 67, 151, 13%);
+    background-color: rgba(40, 67, 151, 13%);
+    border-color: rgba(1, 148, 254, 25%);
+    border-style: inset;
+    border-radius: 1px;
     padding: 20px;
     border-radius: 8px;
     width: 300px;
@@ -72,31 +78,64 @@ main {
 }
 
 .rentabilidade h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.rentabilidade .total {
-    display: flex;
-    justify-content: space-between;
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.rentabilidade ul {
-    list-style: none;
+.rentabilidade .total {
+    margin-bottom: 20px;
 }
 
-.rentabilidade ul li {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #2d3748;
+.rentabilidade h3 {
+    font-size: 14px;
+    font-style: bold;
+}
+
+.rentabilidade p {
+    font-size: 24px;
+    font-style: bold;
+    color: #07EAD3;
+}
+
+.rentabilidade strong {
+    font-size: 32px;
+    font-style: bold;
+    color: #ffffff;
+}
+
+.rentabilidade .linha {
+    height: 1px;
+    background-color: rgba(1, 148, 254, 25%);
+}
+
+.rentabilidade .table {
+    padding: 10px;
+    border-collapse: collapse;
+    font-size: 16px;
+    font-style: bold;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.rentabilidade th {
+    color: #07EAD3;
+    font-size: 12px;
+    font-style: bold;
+}
+
+.rentabilidade td {
+    padding-top: 10px;
+    padding-right: 110px;
+}
+
+.chart {
+    padding-left: 50px;
+    width: 80%;
 }
 
 .grafico {
-    padding: 20px;
-    border-radius: 8px;
+    padding-top: 80px;
+    padding-left: 20px;
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -106,22 +145,27 @@ main {
 .grafico h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    font-style: bold;
 }
 
 .chart-image {
-    height: 400px;
+    width: auto;
     flex-grow: 1;
 }
 
-.filtro {
+.filtrar {
     display: flex;
-    justify-content: flex-end;    
-    
+    justify-content: flex-end;
+    color: #07ead3;   
 }
 
-.filtro label {
-    margin-right: 10px;
+.filtrar resultado {
+    width: 198px;
+    height: 54px;
+    margin-left: 10px;
     stroke: rgba(1, 148, 254, 51%);
     border-radius: 14%;
-
+    justify-content: right;
+    font-size: 15px;
+    font-style: light;
 }
