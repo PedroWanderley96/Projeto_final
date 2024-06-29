@@ -39,6 +39,14 @@ Este projeto é parte do curso da Coderhouse e, atualmente, não está aberto pa
 - Amanda Abreu
 - Ana Luiza
 - Bel Freitas
+   <div>
 - Lucas Rocha
+    <a href="https://github.com/LucasRocha2308" target="_blank">
+      <img src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/lucas-rocha-da-silva-530618149/" target="_blank">
+      <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn">
+    </a>
+  </div>
 - Pedro Warderley
 
