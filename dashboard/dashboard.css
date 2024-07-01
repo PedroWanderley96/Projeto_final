@@ -181,34 +181,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar-toggler {
-    display: block;
-  }
-
-  .collapse.navbar-collapse {
-    display: none;
-  }
-
-  .collapse.navbar-collapse.show {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 10px;
-    width: 100%;
-  }
-
-  .logout-container {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+  .card-container {
+    margin-top: 20px;
   }
 }
