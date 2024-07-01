@@ -53,13 +53,39 @@ button {
   background-color: #E6EAED;
   border-radius: 15px;
   padding: 30px 48px 30px 48px;
-  margin: 100px 70px 70px 100px;
+  margin: 70px 30px 70px 30px;
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .nossasMoedas {
+    color: #020D15;
+    background-color: #E6EAED;
+    border-radius: 15px;
+    padding: 30px 48px 30px 48px;
+    margin: 70px 30px 70px 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    }
+    .imgMoedas {
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+
+
+.imgMoedas {
+  padding: 20px;
 
 }
 
-.imgMoedas {
-  padding: 60px;
+.nossasMoedasTitulo {
+  padding-right: 100px;
+  font-size: 30px;
 
 }
