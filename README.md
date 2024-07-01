@@ -36,9 +36,33 @@ Este projeto é parte do curso da Coderhouse e, atualmente, não está aberto pa
 
 ## Participantes
 
+ <div>
 - Amanda Abreu
+   <a href="https://github.com/abreuamanda" target="_blank">
+      <img src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/abreu-amanda" target="_blank">
+      <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn">
+    </a>
+  </div>
+   <div>
 - Ana Luiza
+   <a href="https://github.com/ferreiranaluiza" target="_blank">
+      <img src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white" alt="GitHub">
+    </a>
+    <a href="https://br.linkedin.com/in/ana-luiza-ferreira-%E5%AE%89%E5%A8%9C-2488b3148" target="_blank">
+      <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn">
+    </a>
+  </div>
+   <div>
 - Bel Freitas
+   <a href="https://github.com/BelCFreitas" target="_blank">
+      <img src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/bel-freitas/" target="_blank">
+      <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn">
+    </a>
+  </div>
    <div>
 - Lucas Rocha
     <a href="https://github.com/LucasRocha2308" target="_blank">
@@ -48,5 +72,13 @@ Este projeto é parte do curso da Coderhouse e, atualmente, não está aberto pa
       <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn">
     </a>
   </div>
+   <div>
 - Pedro Warderley
+   <a href="https://github.com/PedroWanderley96" target="_blank">
+      <img src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/pedro-wanderley/" target="_blank">
+      <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn">
+    </a>
+  </div>
 
