@@ -35,174 +35,162 @@ body {
     font-weight: light;
 }
 
-main {
-    display: flex;
-    width: 100%;
-    padding: 80px;
-}
-
-.planilha {
-    width: 20%;
-}
-
-.planilha .titulo {
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-}
-
-.planilha .titulo h1 {
-    font-size: 32px;
-    font-style: bold;
-}
-
-.planilha .titulo p {
-    font-size: 16px;
-    color: #07EAD3;
-    font-style: light;
-}
-
-.planilha .content {
+@media (min-width: 768px) {
+    main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     gap: 20px;
-}
+    width: 100%;
+    padding: 4%;
+    }
 
-.rentabilidade {
-    background-color: rgba(40, 67, 151, 13%);
-    border-color: rgba(1, 148, 254, 25%);
-    border-style: inset;
-    border-radius: 1px;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    margin-right: 20px;
-}
+    .planilha .titulo {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+    }
 
-.rentabilidade h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
+    .planilha .titulo h1 {
+        font-size: 32px;
+        font-style: bold;
+    }
 
-.rentabilidade .total {
-    margin-bottom: 20px;
-}
+    .planilha .titulo p {
+        font-size: 16px;
+        color: #07EAD3;
+        font-style: light;
+    }
 
-.rentabilidade h3 {
-    font-size: 14px;
-    font-style: bold;
-}
+    .rentabilidade {
+        background-color: rgba(40, 67, 151, 13%);
+        border-color: rgba(1, 148, 254, 25%);
+        border-style: inset;
+        border-radius: 1px;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        margin-right: 20px;
+    }
 
-.rentabilidade p {
-    font-size: 24px;
-    font-style: bold;
-    color: #07EAD3;
-}
+    .rentabilidade h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 
-.rentabilidade strong {
-    font-size: 32px;
-    font-style: bold;
-    color: #ffffff;
-}
+    .rentabilidade .total {
+        margin-bottom: 20px;
+    }
 
-.rentabilidade .linha {
-    height: 1px;
-    background-color: rgba(1, 148, 254, 25%);
-}
+    .rentabilidade h3 {
+        font-size: 14px;
+        font-style: bold;
+    }
 
-.rentabilidade .table {
-    padding: 10px;
-    border-collapse: collapse;
-    font-size: 16px;
-    font-style: bold;
-    margin: 20px 0;
-    text-align: left;
-}
+    .rentabilidade p {
+        font-size: 24px;
+        font-style: bold;
+        color: #07EAD3;
+    }
 
-.rentabilidade th {
-    color: #07EAD3;
-    font-size: 12px;
-    font-style: bold;
-}
+    .rentabilidade strong {
+        font-size: 32px;
+        font-style: bold;
+        color: #ffffff;
+    }
 
-.rentabilidade td {
-    padding-top: 10px;
-    padding-right: 110px;
-}
+    .rentabilidade .linha {
+        height: 1px;
+        background-color: rgba(1, 148, 254, 25%);
+    }
 
-.chart {
-    padding-left: 30px;
-    width: 80%;
-}
+    .rentabilidade .table {
+        padding: 10px;
+        border-collapse: collapse;
+        font-size: 16px;
+        font-style: bold;
+        margin: 20px 0;
+        text-align: left;
+    }
 
-.grafico {
-    padding-top: 70px;
-    padding-left: 20px;
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    .rentabilidade th {
+        color: #07EAD3;
+        font-size: 12px;
+        font-style: bold;
+    }
 
-.grafico h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-style: bold;
-}
+    .rentabilidade td {
+        padding-top: 10px;
+        padding-right: 110px;
+    }
 
-.chart-image {
-    width: auto;
-    flex-grow: 1;
-}
+    .chart {
+        padding-left: ;
+    }
 
-.filtro {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 15px;
-    font-style: light;
-    justify-content: right;
-}
+    .grafico {
+        padding-top: 70px;
+    }
 
-.filtro span {
-    align-content: center;
-    padding-right: 15px;
-}
+    .grafico h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-style: bold;
+    }
 
-.filtro .menu {
-    position: relative;
-    display: inline-block;
-}
+    .chart-image {
+        width: auto;
+        flex-grow: 1;
+    }
 
-.menu .periodo {
-    background-color: rgba(0, 0, 0, 0);
-    color: #07EAD3;
-    padding: 5px;
-    font-size: 15px;
-    border: 1px solid rgba(1, 148, 254, 51%);
-    border-radius: 14px;
-    cursor: pointer;
-    width: 198px;
-    height: 54px;
-}
+    .filtro {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 15px;
+        font-style: light;
+        justify-content: right;
+    }
 
-.periodo::after {
-    content: '▼';
-    font-size: 15px;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
+    .filtro span {
+        align-content: center;
+        padding-right: 15px;
+    }
 
-.menu .menu-content {
-    display: none;
-    position: absolute;
-    background-color: #0194FE;
-    min-width: 198px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2%);
-    border-radius: 14px;
-}
+    .filtro .menu {
+        position: relative;
+        display: inline-block;
+    }
 
-.periodo:hover .menu-content {
-    display: block;
+    .menu .periodo {
+        background-color: rgba(0, 0, 0, 0);
+        color: #07EAD3;
+        padding: 5px;
+        font-size: 15px;
+        border: 1px solid rgba(1, 148, 254, 51%);
+        border-radius: 14px;
+        cursor: pointer;
+        width: 198px;
+        height: 54px;
+    }
+
+    .periodo::after {
+        content: '▼';
+        font-size: 15px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    .menu .menu-content {
+        display: none;
+        position: absolute;
+        background-color: #0194FE;
+        min-width: 198px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2%);
+        border-radius: 14px;
+    }
+
+    .periodo:hover .menu-content {
+        display: block;
+    }
 }
