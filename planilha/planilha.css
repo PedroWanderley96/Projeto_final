@@ -1,196 +1,260 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(
-      45deg,
-      #000309 17.6%,
-      rgba(1, 43, 90, 0.902) 48.6%,
-      rgba(1, 148, 254, 0.53) 72%,
-      rgba(4, 34, 107, 0.5) 83.3%
-    );
-    background-color: #000618;
-    color: aliceblue;
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
-  }
-  
+  background: linear-gradient(
+    45deg,
+    #000309 17.6%,
+    rgba(1, 43, 90, 0.902) 48.6%,
+    rgba(1, 148, 254, 0.53) 72%,
+    rgba(4, 34, 107, 0.5) 83.3%
+  );
+  background-color: #000618;
+  color: aliceblue;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+}
+
 .container-superior {
-   display: flex;
-   flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-  
+
 .container-superior .titulo {
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
-  
+
 .container-superior .texto-pequeno {
-    color: #07ead3;
-    font-size: 20px;
-    font-weight: light;
+  color: #07ead3;
+  font-size: 20px;
+  font-weight: light;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.planilha .titulo {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.planilha .titulo h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.planilha .titulo p {
+  font-size: 16px;
+  color: #07ead3;
+  font-weight: light;
+}
+
+.rentabilidade {
+  background-color: rgba(40, 67, 151, 0.13);
+  border-color: rgba(1, 148, 254, 0.25);
+  border-style: inset;
+  border-radius: 1px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.rentabilidade h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.rentabilidade .total {
+  margin-bottom: 20px;
+}
+
+.rentabilidade h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.rentabilidade p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #07ead3;
+}
+
+.rentabilidade strong {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.rentabilidade .linha {
+  height: 1px;
+  background-color: rgba(1, 148, 254, 0.25);
+  border: none;
+}
+
+.rentabilidade .tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.rentabilidade th {
+  color: #07ead3;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.rentabilidade td {
+  padding-top: 10px;
+}
+
+.chart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.grafico {
+  padding-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.grafico h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.chart-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.filtro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: light;
+  margin-bottom: 20px;
+}
+
+.filtro span {
+  padding-right: 15px;
+}
+
+.filtro .menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu .periodo {
+  background-color: rgba(0, 0, 0, 0);
+  color: #07ead3;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid rgba(1, 148, 254, 0.51);
+  border-radius: 14px;
+  cursor: pointer;
+  width: 198px;
+  height: 54px;
+  position: relative;
+}
+
+.periodo::after {
+  content: "▼";
+  font-size: 15px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.menu .menu-content {
+  display: none;
+  position: absolute;
+  background-color: #0194fe;
+  min-width: 198px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  z-index: 1;
+}
+
+.menu-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-content a:hover {
+  background-color: #1a73e8;
+}
+
+.menu:hover .menu-content {
+  display: block;
 }
 
 @media (min-width: 768px) {
-    main {
+  main {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
     width: 100%;
     padding: 4%;
-    }
+  }
 
-    .planilha .titulo {
-        margin-bottom: 30px;
-        padding-bottom: 10px;
-    }
+  .planilha .titulo {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+  }
 
-    .planilha .titulo h1 {
-        font-size: 32px;
-        font-style: bold;
-    }
+  .planilha .titulo h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
 
-    .planilha .titulo p {
-        font-size: 16px;
-        color: #07EAD3;
-        font-style: light;
-    }
+  .planilha .titulo p {
+    font-size: 16px;
+    color: #07ead3;
+    font-weight: light;
+  }
 
-    .rentabilidade {
-        background-color: rgba(40, 67, 151, 13%);
-        border-color: rgba(1, 148, 254, 25%);
-        border-style: inset;
-        border-radius: 1px;
-        padding: 20px;
-        border-radius: 8px;
-        width: 300px;
-        margin-right: 20px;
-    }
+  .rentabilidade {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
+  }
 
-    .rentabilidade h2 {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
+  .grafico {
+    padding-top: 20px;
+  }
 
-    .rentabilidade .total {
-        margin-bottom: 20px;
-    }
+  .chart {
+    margin-top: -200px;
+  }
 
-    .rentabilidade h3 {
-        font-size: 14px;
-        font-style: bold;
-    }
+  .chart-image {
+    width: auto;
+    flex-grow: 1;
+  }
 
-    .rentabilidade p {
-        font-size: 24px;
-        font-style: bold;
-        color: #07EAD3;
-    }
-
-    .rentabilidade strong {
-        font-size: 32px;
-        font-style: bold;
-        color: #ffffff;
-    }
-
-    .rentabilidade .linha {
-        height: 1px;
-        background-color: rgba(1, 148, 254, 25%);
-    }
-
-    .rentabilidade .table {
-        padding: 10px;
-        border-collapse: collapse;
-        font-size: 16px;
-        font-style: bold;
-        margin: 20px 0;
-        text-align: left;
-    }
-
-    .rentabilidade th {
-        color: #07EAD3;
-        font-size: 12px;
-        font-style: bold;
-    }
-
-    .rentabilidade td {
-        padding-top: 10px;
-        padding-right: 110px;
-    }
-
-    .chart {
-        padding-left: ;
-    }
-
-    .grafico {
-        padding-top: 70px;
-    }
-
-    .grafico h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        font-style: bold;
-    }
-
-    .chart-image {
-        width: auto;
-        flex-grow: 1;
-    }
-
-    .filtro {
-        display: flex;
-        justify-content: flex-end;
-        font-size: 15px;
-        font-style: light;
-        justify-content: right;
-    }
-
-    .filtro span {
-        align-content: center;
-        padding-right: 15px;
-    }
-
-    .filtro .menu {
-        position: relative;
-        display: inline-block;
-    }
-
-    .menu .periodo {
-        background-color: rgba(0, 0, 0, 0);
-        color: #07EAD3;
-        padding: 5px;
-        font-size: 15px;
-        border: 1px solid rgba(1, 148, 254, 51%);
-        border-radius: 14px;
-        cursor: pointer;
-        width: 198px;
-        height: 54px;
-    }
-
-    .periodo::after {
-        content: '▼';
-        font-size: 15px;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        pointer-events: none;
-    }
-
-    .menu .menu-content {
-        display: none;
-        position: absolute;
-        background-color: #0194FE;
-        min-width: 198px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2%);
-        border-radius: 14px;
-    }
-
-    .periodo:hover .menu-content {
-        display: block;
-    }
+  .filtro {
+    justify-content: flex-end;
+  }
 }
