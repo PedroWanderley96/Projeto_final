@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este é o projeto final do curso de HTML e CSS da Coderhouse. O projeto, intitulado "COINFLIP", é uma plataforma de análise financeira e gestão de investimentos. Nosso objetivo é fornecer ferramentas e insights para ajudar os usuários a tomar decisões informadas e seguras.
+Este é o projeto final do curso de Desenvolvimento Web da Coderhouse. O projeto, intitulado "COINFLIP", é uma plataforma de análise financeira e gestão de investimentos. Nosso objetivo é fornecer ferramentas e insights para ajudar os usuários a tomar decisões informadas e seguras.
 
 ## Funcionalidades
 
