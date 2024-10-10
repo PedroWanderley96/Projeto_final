@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Bitcoin",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "Ethereum",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "Litecoin",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "Tether USDt",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "BNB",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "Solana",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "USDC",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "Lido Staked ETH",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "XRP",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "Toncoin",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "Dogecoin",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  },
+  {
+    "title": "Cardano",
+    "buyPlatform": "Binance",
+    "buyPrice": "R$ 17.86",
+    "sellPlatform": "KuCoin",
+    "sellPrice": "R$ 18.79",
+    "spread": "3,46%",
+    "fees": "0,80% + R$55,87"
+  }
+]
