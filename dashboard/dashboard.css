@@ -86,6 +86,7 @@ body {
   width: 18rem;
   flex-shrink: 0;
   padding: 20px 12px;
+  margin: 4px;
 }
 
 .card-container:hover {
