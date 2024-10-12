@@ -65,3 +65,38 @@ async function loadCardData() {
 }
 
 loadCardData();
+
+function logout() {
+  localStorage.removeItem("email");
+  localStorage.removeItem("password");
+  window.location.href = "../index.html";
+}
+
+document.getElementById("logout-button").addEventListener("click", function () {
+  logout();
+});
+
+document.getElementById("logout-icon").addEventListener("click", function () {
+  logout();
+});
+
+document.getElementById("profile-link").addEventListener("click", function () {
+  const nameModal = new bootstrap.Modal(document.getElementById("nameModal"));
+  nameModal.show();
+});
+
+document
+  .getElementById("nameForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    const newName = document.getElementById("newName").value;
+    if (newName) {
+      document.querySelector(
+        ".profile-info h3"
+      ).textContent = `Olá, ${newName}!`;
+      const nameModal = bootstrap.Modal.getInstance(
+        document.getElementById("nameModal")
+      );
+      nameModal.hide();
+    }
+  });

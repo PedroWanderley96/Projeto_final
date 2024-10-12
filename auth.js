@@ -8,15 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const isLogin = localStorage.getItem("email") !== null;
 
+  function logout() {
+    localStorage.removeItem("email");
+    localStorage.removeItem("password");
+    window.location.href = "../index.html";
+  }
+
   if (isLogin) {
     dashboardLinkHeader.style.display = "block";
     planilhaLinkHeader.style.display = "block";
     loginLogoutLink.textContent = "Logout";
     loginLogoutLink.addEventListener("click", function (e) {
       e.preventDefault();
-      localStorage.removeItem("email");
-      localStorage.removeItem("password");
-      window.location.href = "../index.html";
+      logout();
     });
   } else {
     dashboardLinkHeader.style.display = "none";
@@ -34,4 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
       planilhaLinkFooter.style.display = "none";
     }
   }
+
+  window.logout = logout;
 });
