@@ -65,3 +65,17 @@ async function loadCardData() {
 }
 
 loadCardData();
+
+function logout() {
+  localStorage.removeItem("email");
+  localStorage.removeItem("password");
+  window.location.href = "../index.html";
+}
+
+document.getElementById("logout-button").addEventListener("click", function () {
+  window.logout();
+});
+
+document.getElementById("logout-icon").addEventListener("click", function () {
+  window.logout();
+});
