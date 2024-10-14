@@ -26,7 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
     dashboardLinkHeader.style.display = "none";
     planilhaLinkHeader.style.display = "none";
     loginLogoutLink.textContent = "Login";
-    loginLogoutLink.href = "login/login.html";
+
+    if (window.location.pathname.includes("/contato/contato.html")) {
+      loginLogoutLink.href = "../login/login.html";
+    } else {
+      loginLogoutLink.href = "login/login.html";
+    }
   }
 
   if (dashboardLinkFooter && planilhaLinkFooter) {
