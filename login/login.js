@@ -30,7 +30,7 @@ function login(e) {
   if (email === "teste@teste.com" && password === "teste") {
     localStorage.setItem("email", "teste@teste.com");
     localStorage.setItem("password", "teste");
-    window.location.href = "/";
+    window.location.href = "./../index.html";
   } else {
     alert("Credenciais inválidas. Tente novamente.");
   }
