@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 150px;
+  margin-bottom: 200px;
   margin-left: 30px;
   padding: 20px;
 }
@@ -60,6 +61,8 @@ button {
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
+ 
+
 }
 
 @media (max-width: 768px) {
@@ -87,7 +90,7 @@ button {
 }
 
 .nossasMoedasTitulo {
-  padding-right: 100px;
+  padding-right: 50px;
   font-size: 30px;
 
 }
