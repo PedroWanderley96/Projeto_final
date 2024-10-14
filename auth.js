@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dashboardLinkHeader.style.display = "none";
     planilhaLinkHeader.style.display = "none";
     loginLogoutLink.textContent = "Login";
-    loginLogoutLink.href = "../login/login.html";
+    loginLogoutLink.href = "login/login.html";
   }
 
   if (dashboardLinkFooter && planilhaLinkFooter) {
