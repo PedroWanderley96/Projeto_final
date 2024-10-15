@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const isLogin = localStorage.getItem("email") !== null;
+
   const dashboardLinkHeader = document.querySelector("#dashboard-link");
   const planilhaLinkHeader = document.querySelector("#planilha-link");
   const loginLogoutLink = document.querySelector("#login-logout-link");
 
   const dashboardLinkFooter = document.querySelector("#dashboard-link-footer");
   const planilhaLinkFooter = document.querySelector("#planilha-link-footer");
-
-  const isLogin = localStorage.getItem("email") !== null;
 
   function logout() {
     localStorage.removeItem("email");
@@ -45,4 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.logout = logout;
+
+  const startNowLink = document.querySelector("#start-now-link");
+  if (startNowLink) {
+    startNowLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (!isLogin) {
+        window.location.href = "login/login.html";
+      } else {
+        window.location.href = "dashboard/dashboard.html";
+      }
+    });
+  }
 });
