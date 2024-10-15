@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.removeItem("email");
     localStorage.removeItem("password");
     window.location.href = "../index.html";
+    if (window.location.pathname.includes("index.html")) {
+      window.location.href = "./index.html";
+    } else {
+      window.location.href = "../index.html";
+    }
   }
 
   if (isLogin) {
