@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const isLogin = localStorage.getItem("email") !== null;
+
   const dashboardLinkHeader = document.querySelector("#dashboard-link");
   const planilhaLinkHeader = document.querySelector("#planilha-link");
   const loginLogoutLink = document.querySelector("#login-logout-link");
@@ -6,12 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const dashboardLinkFooter = document.querySelector("#dashboard-link-footer");
   const planilhaLinkFooter = document.querySelector("#planilha-link-footer");
 
-  const isLogin = localStorage.getItem("email") !== null;
-
   function logout() {
     localStorage.removeItem("email");
     localStorage.removeItem("password");
-    window.location.href = "../index.html";
+    if (window.location.pathname.includes("index.html")) {
+      window.location.href = "./index.html";
+    } else {
+      window.location.href = "../index.html";
+    }
   }
 
   if (isLogin) {
@@ -26,7 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
     dashboardLinkHeader.style.display = "none";
     planilhaLinkHeader.style.display = "none";
     loginLogoutLink.textContent = "Login";
-    loginLogoutLink.href = "../login/login.html";
+
+    if (window.location.pathname.includes("/contato/contato.html")) {
+      loginLogoutLink.href = "../login/login.html";
+    } else {
+      loginLogoutLink.href = "login/login.html";
+    }
   }
 
   if (dashboardLinkFooter && planilhaLinkFooter) {
@@ -40,4 +49,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.logout = logout;
+
+  const startNowLink = document.querySelector("#start-now-link");
+  if (startNowLink) {
+    startNowLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (!isLogin) {
+        window.location.href = "login/login.html";
+      } else {
+        window.location.href = "dashboard/dashboard.html";
+      }
+    });
+  }
 });
