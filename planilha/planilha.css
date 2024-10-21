@@ -118,28 +118,34 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
   }
   
-  .grafico {
+  /*.grafico {
     padding-top: 20px;
     width: 100%;
     max-width: 800px;
-  }
+  }*/
   
   .grafico h2 {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: bold;
   }
+
+  #myChart {
+    width: 100%;
+    max-width: auto;
+    height: 400px; /* Definir uma altura mínima para o gráfico ser exibido */
+  }  
   
-  .chart-image {
+  /*~ .chart-image {
     width: 100%;
     max-width: 800px;
     height: auto;
-  }
+  }*/
   
   .filtro {
+    margin-top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,10 +250,10 @@
       margin-top: -200px;
     }
   
-    .chart-image {
+    /*.chart-image {
       width: auto;
       flex-grow: 1;
-    }
+    }*/
   
     .filtro {
       justify-content: flex-end;

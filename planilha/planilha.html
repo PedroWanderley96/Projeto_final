@@ -77,7 +77,7 @@
       <section class="planilha">
         <div class="titulo">
           <h1>Planilha</h1>
-          <p>Exibindo: Resultado Geral</p>
+          <p>Exibindo: <strong id="tituloGrafico">Resultado Geral</strong></p>
         </div>
 
         <div class="content">
@@ -96,51 +96,51 @@
               </tr>
               <tr>
                 <td>Janeiro</td>
-                <td>R$00,00</td>
+                <td>R$280,00</td>
               </tr>
               <tr>
                 <td>Fevereiro</td>
-                <td>R$00,00</td>
+                <td>R$270,00</td>
               </tr>
               <tr>
                 <td>Março</td>
-                <td>R$00,00</td>
+                <td>R$800,00</td>
               </tr>
               <tr>
                 <td>Abril</td>
-                <td>R$00,00</td>
+                <td>R$700,00</td>
               </tr>
               <tr>
                 <td>Maio</td>
-                <td>R$00,00</td>
+                <td>R$650,00</td>
               </tr>
               <tr>
                 <td>Junho</td>
-                <td>R$00,00</td>
+                <td>R$750,00</td>
               </tr>
               <tr>
                 <td>Julho</td>
-                <td>R$00,00</td>
+                <td>R$450,00</td>
               </tr>
               <tr>
                 <td>Agosto</td>
-                <td>R$00,00</td>
+                <td>R$240,00</td>
               </tr>
               <tr>
                 <td>Setembro</td>
-                <td>R$00,00</td>
+                <td>R$900,00</td>
               </tr>
               <tr>
                 <td>Outubro</td>
-                <td>R$00,00</td>
+                <td>R$1.000,00</td>
               </tr>
               <tr>
                 <td>Novembro</td>
-                <td>R$00,00</td>
+                <td>R$740,00</td>
               </tr>
               <tr>
                 <td>Dezembro</td>
-                <td>R$00,00</td>
+                <td>R$950,00</td>
               </tr>
             </table>
           </div>
@@ -172,7 +172,9 @@
 
         <div class="grafico">
           <h2>Lucro</h2>
-          <img src="../image/chart.png" alt="Gráfico" class="chart-image" />
+          <div id="chartContainer">
+            <canvas id="myChart"></canvas>
+          </div>
         </div>
       </section>
     </main>
@@ -213,5 +215,7 @@
     </footer>
     <script src="../header.js"></script>
     <script src="../auth.js"></script>
+    <script src="planilha.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>
