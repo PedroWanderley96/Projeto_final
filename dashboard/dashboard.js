@@ -94,9 +94,19 @@ document
       document.querySelector(
         ".profile-info h3"
       ).textContent = `Olá, ${newName}!`;
+      localStorage.setItem("userName", newName);
       const nameModal = bootstrap.Modal.getInstance(
         document.getElementById("nameModal")
       );
       nameModal.hide();
     }
   });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedName = localStorage.getItem("userName");
+  if (savedName) {
+    document.querySelector(
+      ".profile-info h3"
+    ).textContent = `Olá, ${savedName}!`;
+  }
+});

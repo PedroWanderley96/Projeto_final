@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("email").value;
     const mensagem = document.getElementById("story").value;
 
-    localStorage.setItem("contato", JSON.stringify({ nome, email, mensagem }));
+    sessionStorage.setItem(
+      "contato",
+      JSON.stringify({ nome, email, mensagem })
+    );
 
     const modal = new bootstrap.Modal(document.getElementById("successModal"));
     modal.show();
