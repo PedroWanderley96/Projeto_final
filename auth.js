@@ -52,13 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const startNowLink = document.querySelector("#start-now-link");
   if (startNowLink) {
-    startNowLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      if (!isLogin) {
+    if (isLogin) {
+      startNowLink.style.display = "none";
+    } else {
+      startNowLink.addEventListener("click", function (e) {
+        e.preventDefault();
         window.location.href = "login/login.html";
-      } else {
-        window.location.href = "dashboard/dashboard.html";
-      }
-    });
+      });
+    }
   }
 });
